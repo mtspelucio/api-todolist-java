@@ -35,7 +35,7 @@ public class FilterTaskAuth extends OncePerRequestFilter {
 
                 //coverte os dados para base64
                 byte[] authDecoded = Base64.getDecoder().decode(authEncoded);
-
+                System.out.println(authDecoded);
 
                 //converte os dados para string
                 var authString = new String(authDecoded);
